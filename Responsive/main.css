@@ -1,0 +1,225 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    font-family: 'Castoro Titling', cursive;
+    font-family: 'Instrument Serif', serif;
+    font-family: 'Libre Baskerville', serif;
+    background-color: cornsilk;
+}
+
+/* below one  */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  /* why i mention i don't know */
+header{
+    padding: 2px;   
+    border: 2px solid skyblue;
+    background-color: darkkhaki;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 100px;
+    color: crimson;
+    
+}
+
+footer{
+    padding: 2px;   
+    border: 2px solid skyblue;
+    background-color: darkkhaki;
+    text-align: center;
+    font-size: smaller;
+    font-weight: 90px;
+    color: crimson;
+}
+
+.row{
+    position: relative;
+    padding: 5px;
+}
+ul li{
+    font-weight: bold;
+    text-align: center;
+    font-weight: 100px;
+    color: darkgreen;
+    background-color: aqua;
+    list-style-type: none;
+    border: 3px double black;
+    padding: 10px;
+    margin-bottom: 22px;
+    cursor: pointer;
+    flex: 50%;
+}
+
+.col-4{
+    position: relative;
+    flex: 50%;
+}
+.col-4, h2{
+    text-align: center;
+    color: crimson;
+    font-weight: 100px;
+
+} 
+.textcol{
+    color: darkblue;
+    font-size: 20px;
+}
+.col-5{
+    text-align: center;
+    font-weight: 100;
+}
+.text{
+    background-color: darkseagreen;
+    color: blue;
+    font-weight: 500;
+    padding: 30px;
+    flex: 50%;
+}
+.centerpage{
+    text-indent: 45px;
+    color: deeppink;
+    line-height: 1.8;
+    word-spacing: 10px;
+    text-align-last: justify;
+    flex: 50%;
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        background-color: #009933;
+        color: darkviolet;
+        float: left;
+        padding: 10px;  
+    }
+
+    *{
+        background-color: #009933;
+    }
+
+    .text{
+        background-color: #009933;
+       }
+
+       footer{
+       
+        background-color: #009933;
+        
+    }
+    header{
+            background-color: #009933;
+    }
+    
+    /* .text{
+        background-color: rosybrown;
+        color: blueviolet;
+    } */
+
+}
+@media print{
+    body{
+        background-color: #009933;
+        color: darkviolet;
+     
+    }
+
+    *{
+        background-color: #009933;
+    }
+    .text{
+        background-color: #009933;
+       }
+       footer{
+       
+        background-color: #009933;
+        
+    }
+
+    header{
+        background-color: #009933;
+}
+
+  
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+
+    body{
+        background-color: #009933;
+        color: darkviolet;
+     
+    }
+   
+    *{
+        background-color: #009933;
+    }
+   .text{
+    background-color: #009933;
+   } 
+   footer{
+       
+    background-color: #009933;
+    
+}
+
+header{
+    background-color: #009933;
+}
+  }
+  @media (max-width: 600px) {
+    ul {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      flex: 100%;
+    }
+
+    *{
+        background-color: #009933;
+    }
+    .text{
+        background-color: #009933;
+       }
+       footer{
+       
+        background-color: #009933;
+        
+    }
+
+    header{
+        background-color: #009933;
+}
+
+body{
+    background-color: #009933;
+    color: darkviolet;
+ 
+}
+  }
+/* @media only screen and (min-width: 768px) {
+    /* For desktop: 
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }*/
